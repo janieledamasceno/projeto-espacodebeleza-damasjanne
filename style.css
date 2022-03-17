@@ -70,26 +70,12 @@ body {
     border-radius: 200px;
 }
 
-.toggle {
-    height: 5rem;
-    width: 50rem;
-    display: none;
-}
-
-.toggle div {
-    height: 4px;
-    width: 100%;
-    background-color: honeydew;
-    margin: 1rem;
-}
-
 .header-container {
     width: 100%;
     height: 100%;
     background-position: cover;
     color: honeydew;
     border-bottom: solid 3px purple;
-    margin: 20px;
 }
 
 .video {
@@ -131,12 +117,6 @@ body {
     font-size: 8rem;
     opacity: 1;
     text-shadow: 0 .4rem 0.2rem honeydew;
-}
-
-.lead {
-    font-size: 1.9rem;
-    font-weight: 500;
-    letter-spacing: 4px;
 }
 
 .services {
@@ -195,19 +175,20 @@ body {
     transform: perspective(200px) translate(20px, 0, 100px);
 }
 
+.services-title {
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
 .services-p {
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
 }
 
-.services-title {
-    font-size: 4rem;
-    text-align: center;
-}
-
 .valores {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin-top: 1rem;
     text-align: center;
     color: rgb(15, 15, 15);
@@ -373,6 +354,8 @@ body {
     text-align: center;
     margin: 3rem;
 }
+/* QUEM SOMOS */
+
 .quem-somos{
     text-align: justify;
     background-color: honeydew;
@@ -387,6 +370,7 @@ body {
     padding: 40px;
     margin: 40px;
     box-sizing: border-box;
+    border-top: solid 4px purple;
 }
 .quemsomos-par {
     font-size: 4rem;
@@ -460,8 +444,33 @@ body {
         text-align: center;
 }
 .quemsomos-p{
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding: 1rem;
         text-align: center;
         color: #050505;
+}
+/* FOOTER */
+
+footer{
+    align-items: center;
+    display: flex;
+    background-color: #0d0e0d;
+    padding: 40px 0px;
+    flex-direction: column;
+}
+footer ul{
+    display: flex;
+    margin-bottom: 25px;
+}
+footer ul li{
+    margin-right: 10px;
+}
+footer ul li a{
+    color: purple;
+    font-size: 4rem;
+}
+footer p{
+    color: honeydew;
+    text-align: center;
+    font-size: 30px;
 }
