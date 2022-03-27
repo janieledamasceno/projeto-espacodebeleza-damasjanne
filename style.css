@@ -24,11 +24,12 @@ body {
     width: 100%;
     background-color: white;
     display:flex;
+    opacity: 0.8;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     z-index: 10;
-    position: fixed;
+    position: absolute;
     border-bottom: solid 3px purple;
     border-top: 3px solid purple;
 }
@@ -118,6 +119,7 @@ body {
     opacity: 1;
     text-shadow: 0 .4rem 0.2rem honeydew;
 }
+/* SERVICES */
 
 .services {
     width: 100%;
@@ -151,12 +153,12 @@ body {
 }
 
 .services-img {
-    height: 50%;
+    height: 55%;
     width: 100%;
     background-size: cover;
     background-position: top;
     background-image: url(img/logo.damasjanne.png);
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .services-container {
@@ -167,6 +169,8 @@ body {
     overflow: hidden;
     box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
     margin: 30px 0;
+    border-top: solid 3px purple;
+    border-bottom: solid 3px purple;
 }
 
 .services-container:hover {
@@ -194,11 +198,106 @@ body {
     color: rgb(15, 15, 15);
 }
 
+/* QUEM SOMOS */
+
+.quem-somos{
+    text-align: justify;
+    background-color: honeydew;
+}
+.quemsomos-heading {
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 0 0 1rem rgb(0 0 0 / 90%);
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 8rem;
+    padding: 40px;
+    margin: 40px;
+    box-sizing: border-box;
+    border-top: solid 4px purple;
+}
+.quemsomos-par {
+    font-size: 4rem;
+    padding: 1rem;
+    text-align: center;
+    color: honeydew;
+}
+.quemsomos-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .9);
+    color: honeydew;
+    padding-bottom: 50px;
+    border-top: solid 4px purple;
+    border-bottom: solid 3px purple;
+    border-radius: 5px;
+}
+.quemsomos-grid {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 2rem;
+}
+.quemsomos-box{
+    width: 100%;
+    height: 50rem;
+    background-color: honeydew;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgb(0 0 0 / 20%);
+    margin: 30px 0;
+    border-top: solid 4px purple;
+    border-bottom: solid 4px purple;
+}
+.quemsomos-img-j{
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-image: url(img/img-j-pexels.jpg);
+    margin-bottom: 20px;
+}
+.quemsomos-img-m{
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-image: url(img/img-m-pexels.jpg);
+    margin-bottom: 20px;
+}
+.quemsomos-img-ma{
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-image: url(img/img-ma-pexels.jpg);
+    margin-bottom: 20px;
+}
+.quemsomos-img-a{
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-image: url(img/img-a-pexels.jpg);
+    margin-bottom: 20px;
+}
+.quemsomos-title{
+        font-size: 4rem;
+        text-align: center;
+}
+.quemsomos-p{
+        font-size: 2.5rem;
+        padding: 1rem;
+        text-align: center;
+        color: #050505;
+}
 
 /* CONTACT  */
 
 .contact {
-    padding: 15rem 10rem;
+    padding: 15rem 10rem 3rem;
     width: 100%;
     background-size: cover;
 }
@@ -209,30 +308,25 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 0 3rem rgba(0, 0, 0, .9);
+    box-shadow: 0 0 0 rgba(0, 0, 0, .9);
 }
 
 .left {
-    background-color: rgb(15, 15, 15);
+    background-color: rgba(0, 0, 0, .9);
     width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px
+    border-radius: 10px;
+    margin-right: 60px;
+    border-top: solid 3px purple;
+    border-bottom: solid 3px purple;
 }
 
 .right {
-    background-color: #050505;
+    background-color: rgb(0, 0, 0, .9);
     width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
     position: relative;
-}
-
-.right-img {
-    height: 10rem;
-    width: 10rem;
-    position: absolute;
-    top: -11;
-    left: -11rem;
+    border-top: solid 3px purple;
+    border-bottom: solid 3px purple;
 }
 
 .contact-form {
@@ -277,12 +371,6 @@ body {
     transition: all 0.4s ease;
 }
 
-.contact-btn:hover {
-    background-color: #050505;
-    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .4);
-    color: honeydew;
-}
-
 .input {
     width: 98%;
     outline: none;
@@ -299,6 +387,7 @@ body {
 
 .input:focus {
     width: 100%;
+    background-color: white;
 }
 
 .input:valid {
@@ -345,8 +434,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: space-evenly;
 }
+
+/* MAPS , LOCALIZATION*/
 
 .maps-title {
     font-size: 4rem;
@@ -354,108 +444,14 @@ body {
     text-align: center;
     margin: 3rem;
 }
-/* QUEM SOMOS */
 
-.quem-somos{
-    text-align: justify;
-    background-color: honeydew;
-}
-.quemsomos-heading {
-    font-size: 6rem;
-    text-align: center;
-    text-shadow: 0 0 1rem rgb(0 0 0 / 90%);
-    text-transform: uppercase;
-    color: white;
-    margin-bottom: 8rem;
-    padding: 40px;
-    margin: 40px;
-    box-sizing: border-box;
-    border-top: solid 4px purple;
-}
-.quemsomos-par {
-    font-size: 4rem;
-    padding: 1rem;
-    text-align: center;
-    color: honeydew;
-}
-.quemsomos-container{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
-    color: honeydew;
-    padding-bottom: 50px;
-    border-top: solid 4px purple;
-    border-bottom: solid 3px purple;
-    border-radius: 5px;
-}
-.quemsomos-grid {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    justify-self: center;
-    grid-gap: 2rem;
-}
-.quemsomos-box{
-    width: 100%;
-    height: 50rem;
-    background-color: honeydew;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 2rem rgb(0 0 0 / 20%);
-    margin: 30px 0;
-    border-top: solid 4px purple;
-    border-bottom: solid 3px purple;
-}
-.quemsomos-img-j{
-    height: 60%;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    background-image: url(img/img-j-pexels.jpg);
-    margin-bottom: 20px;
-}
-.quemsomos-img-m{
-    height: 60%;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    background-image: url(img/img-m-pexels.jpg);
-    margin-bottom: 20px;
-}
-.quemsomos-img-ma{
-    height: 60%;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    background-image: url(img/img-ma-pexels.jpg);
-    margin-bottom: 20px;
-}
-.quemsomos-img-a{
-    height: 60%;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    background-image: url(img/img-a-pexels.jpg);
-    margin-bottom: 20px;
-}
-.quemsomos-title{
-        font-size: 4rem;
-        text-align: center;
-}
-.quemsomos-p{
-        font-size: 2.5rem;
-        padding: 1rem;
-        text-align: center;
-        color: #050505;
-}
 /* FOOTER */
 
 footer{
     align-items: center;
     display: flex;
     background-color: #0d0e0d;
-    padding: 40px 0px;
+    padding: 40px 0px 0px 0px;
     flex-direction: column;
 }
 footer ul{
@@ -472,5 +468,5 @@ footer ul li a{
 footer p{
     color: honeydew;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
