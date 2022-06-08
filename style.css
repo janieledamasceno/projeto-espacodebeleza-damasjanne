@@ -106,7 +106,7 @@ body {
 }
 
 .heading-primary {
-    font-size: 6.0rem;
+    font-size: 4.0rem;
     font-weight: 300;
     letter-spacing: 3px;
     margin-top: 22%;
@@ -217,7 +217,7 @@ body {
     border-top: solid 4px purple;
 }
 .quemsomos-par {
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding: 1rem;
     text-align: center;
     color: honeydew;
